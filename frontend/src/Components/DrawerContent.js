@@ -19,7 +19,7 @@ const DrawerContent = ({ dp }) => {
     }
 
     const uploadPhoto = async (data) => {
-        const response = await fetch(`http://localhost:8000/api/userdetails/updatedetails/profilepic/${sender}`,
+        const response = await fetch(`https://chatbudd-3rqh.onrender.com/api/userdetails/updatedetails/profilepic/${sender}`,
             {
                 method: 'PUT',
                 body: data

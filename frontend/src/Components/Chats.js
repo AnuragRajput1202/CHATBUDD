@@ -53,7 +53,7 @@ const Chats = (props) => {
     //This is for displaying the profile_picture
     const dp = () => {
         if (profile_picture) {
-            return `http://localhost:8000/${profile_picture}`
+            return `https://chatbudd-3rqh.onrender.com/${profile_picture}`
         }
         else {
             return default_dp
@@ -105,7 +105,7 @@ const Chats = (props) => {
     //adding the message sent in the database 
     const addMessage = async (message) => {
         const { senderId, receiverId, conversationId, value, type } = message
-        const response = await fetch('http://localhost:8000/api/message/add',
+        const response = await fetch('https://chatbudd-3rqh.onrender.com/api/message/add',
             {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
@@ -131,7 +131,7 @@ const Chats = (props) => {
 
     //uploading the file sent in the database
     const uploadFile = async (data) => {
-        const response = await fetch('http://localhost:8000/api/file/fileupload', {
+        const response = await fetch('https://chatbudd-3rqh.onrender.com/api/file/fileupload', {
             method: 'POST',
             body: data
         })
