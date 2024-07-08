@@ -7,7 +7,7 @@ const ContactList = (props) => {
     const { setReceiver, addConversation, sender, } = context
     const dp = () => {
         if (props.receiver.profile_picture) {
-            return `http://localhost:8000/${props.receiver.profile_picture}`
+            return `https://chatbudd-3rqh.onrender.com/${props.receiver.profile_picture}`
         }
         else {
             return default_dp

@@ -39,7 +39,7 @@ const DrawerContent = ({ dp }) => {
         if (e.key === "Enter") {
             e.target.blur()
             try {
-                const response = fetch(`http://localhost:8000/api/userdetails/updatedetails/username/${sender}`,
+                const response = fetch(`https://chatbudd-3rqh.onrender.com/api/userdetails/updatedetails/username/${sender}`,
                     {
                         method: "PUT",
                         headers: { 'Content-Type': 'application/json' },

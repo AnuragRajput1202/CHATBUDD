@@ -178,7 +178,7 @@ const Chats = (props) => {
     //this will clear the chat history from both ends...
     const clearChatHistory = async () => {
         try {
-            await fetch(`http://localhost:8000/api/message/delete/${conversationId}`, {
+            await fetch(`https://chatbudd-3rqh.onrender.com/api/message/delete/${conversationId}`, {
                 method: 'DELETE'
             })
             props.setChatMessages([])

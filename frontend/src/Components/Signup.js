@@ -36,7 +36,7 @@ const Signup = () => {
     }
     const loginRequest = async (data) => {
         try {
-            const response = await fetch('http://localhost:8000/api/auth/createuser',
+            const response = await fetch('https://chatbudd-3rqh.onrender.com/api/auth/createuser',
                 {
                     method: 'POST',
                     body: data

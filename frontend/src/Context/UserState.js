@@ -17,7 +17,7 @@ const UserState = (props) => {
     }, [])
 
     const getAllUsers = async () => {
-        const response = await fetch('http://localhost:8000/api/userdetails/getusers',
+        const response = await fetch('https://chatbudd-3rqh.onrender.com/api/userdetails/getusers',
             {
                 method: 'GET',
                 headers: {
@@ -30,7 +30,7 @@ const UserState = (props) => {
     }
     const addConversation = async (senderId, receiverId) => {
         try {
-            const response = await fetch('http://localhost:8000/api/conversation/add',
+            const response = await fetch('https://chatbudd-3rqh.onrender.com/api/conversation/add',
                 {
                     method: 'POST',
                     headers: {
@@ -51,7 +51,7 @@ const UserState = (props) => {
     const getConversation = async (senderId, receiverId) => {
         if (receiverId) {
             try {
-                const response = await fetch('http://localhost:8000/api/conversation/get',
+                const response = await fetch('https://chatbudd-3rqh.onrender.com/api/conversation/get',
                     {
                         method: 'POST',
                         headers: {

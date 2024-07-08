@@ -13,7 +13,7 @@ const UserDetails = (props) => {
 
     const dp = () => {
         if (props.sender.profile_picture) {
-            return `http://localhost:8000/${props.sender.profile_picture}`
+            return `https://chatbudd-3rqh.onrender.com/${props.sender.profile_picture}`
         }
         else {
             return default_dp
