@@ -11,6 +11,7 @@ node_modules
 # production
 build
 
+thunder-collection_chatbudd.json
 # misc
 .env
 .DS_Store
