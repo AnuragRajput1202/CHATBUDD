@@ -1,0 +1,41 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "chatbudd",
+    "collectionId": "7f858f15-172c-44f5-a383-5b4c548d49ef",
+    "dateExported": "2024-06-10T14:07:03.548Z",
+    "version": "1.2",
+    "folders": [
+        {
+            "_id": "5e945170-9964-4101-804c-148d8392be7e",
+            "name": "authentication",
+            "containerId": "",
+            "created": "2024-06-10T14:06:14.547Z",
+            "sortNum": 10000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "65ae17b3-5f85-4f3f-803a-cf6a49a787af",
+            "colId": "7f858f15-172c-44f5-a383-5b4c548d49ef",
+            "containerId": "5e945170-9964-4101-804c-148d8392be7e",
+            "name": "create user",
+            "url": "",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-06-10T14:06:24.732Z",
+            "modified": "2024-06-10T14:06:56.251Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{ \r\n    \"name\": \"Anurag\",\r\n    \"email\": \"anuragrajput06@gmail.com\",\r\n     \"password\": \"Anurag@123\",\r\n     \"date_of_birth\": \"2000-02-12\",\r\n     \"gender\": \"Male\",\r\n     \"profile_picture\": \"\"\r\n  \r\n}",
+                "form": []
+            }
+        }
+    ],
+    "ref": "L97GW3jTWILyvBaXfmz4OFXq-3XWGaVzt5c5hVwPVa_5FUNJEAw52OWKHrjKmaO9VO2MZxqf3GGBSgF3G9TIyQ"
+}
