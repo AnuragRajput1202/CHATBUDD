@@ -1,0 +1,17 @@
+{
+  "name": "chatbudd",
+  "version": "1.0.0",
+  "description": "Chatbudd is a real time chatting application where users can update their personal details and send messages to their contacts. \r The User interface is designed using ReactJS, Bootstrap and some useful react libraries.\r The server is set up using node and express.js.\r MongoDB has been used for storing data and socket.io has been used for real-time chatting.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install-server": "cd backend && npm install",
+    "start-server": "cd backend && node app.js",
+    "install-client": "cd client && npm install",
+    "build-client": "cd client && npm run build",
+    "start-client": "cd client && npm run start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
