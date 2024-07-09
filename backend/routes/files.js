@@ -3,7 +3,7 @@ const router = express.Router()
 const multer = require('multer')
 const { GridFsStorage } = require('multer-gridfs-storage')
 
-const url = 'mongodb://localhost:27017/chatbudd'
+const url = `mongodb+srv://${process.env.MONGODB_USERNAME}:${encodeURIComponent(process.env.MONGODB_PASSWORD)}@cluster0.bbu7wg9.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`
 
 const  storage = new GridFsStorage({
     url : url,
@@ -25,7 +25,7 @@ router.post('/fileupload', upload.single('file'), (req, res)=>{
         if(!req.file){
             return res.status(404).json({error:"file not found"})
         }
-        const imageUrl = `http://localhost:8000/api/file/getfile/${req.file.filename}`
+        const imageUrl = `https://chatbudd-3rqh.onrender.com/api/file/getfile/${req.file.filename}`
         res.json(imageUrl)
     } catch (error) {
         res.status(404).json({error})
