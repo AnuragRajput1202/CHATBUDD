@@ -104,6 +104,7 @@ const Chats = (props) => {
 
     //adding the message sent in the database 
     const addMessage = async (message) => {
+        console.log(message)
         const { senderId, receiverId, conversationId, value, type } = message
         const response = await fetch('https://chatbudd-3rqh.onrender.com/api/message/add',
             {
