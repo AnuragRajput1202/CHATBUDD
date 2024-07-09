@@ -7,7 +7,7 @@ const { validationResult, body } = require('express-validator')
 
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
-        cb(null, './backend/uploads/')
+        cb(null, './uploads')
     },
     filename: function (req, file, cb) {
         const uniquePrefix = Date.now()
