@@ -13,7 +13,7 @@ const UserState = (props) => {
     const socket = useRef()
 
     useEffect(() => {
-        socket.current = io('ws://localhost:9000')
+        socket.current = io('https://chatbudd-1.onrender.com')
     }, [])
 
     const getAllUsers = async () => {
