@@ -46,10 +46,7 @@ router.post('/createuser', upload, [
                     password: securedPassword,
                     date_of_birth: req.body.date_of_birth,
                     gender: req.body.gender,
-                    profile_picture: {
-                        data: req.file.filename,
-                        contentType: 'image/png'
-                    }
+                    profile_picture: req.file.filename
                 })
             } else {
                 const securedPassword = await bcryptjs.hash(req.body.password, salt)

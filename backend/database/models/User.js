@@ -22,8 +22,7 @@ const UserSchema = new Schema({
         type: String,
     },
     profile_picture:{
-        data: Buffer,
-        contentType: String
+        type: String
     },
     date:{
         type: Date,
