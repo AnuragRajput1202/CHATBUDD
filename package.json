@@ -9,7 +9,9 @@
     "start-server": "cd backend && node index.js",
     "install-client": "cd frontend && npm install",
     "build-client": "cd frontend && npm run build",
-    "start-client": "cd frontend && npm run start"
+    "start-client": "cd frontend && npm run start",
+    "install-socket": "cd socket && npm install",
+    "start-socket": "cd socket && node index.js"
   },
   "keywords": [],
   "author": "",

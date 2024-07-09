@@ -2,7 +2,7 @@ const { Server } = require('socket.io')
 
 const io = new Server(9000, {
     cors :{
-        origin : 'http://localhost:3000'
+        origin : 'https://chatbudd-client.onrender.com'
     }
 })
 let activeUsers =[]
